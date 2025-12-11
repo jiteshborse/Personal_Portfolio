@@ -1,0 +1,15 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="300" fill="#fef3c7"/>
+  <rect x="50" y="50" width="500" height="200" fill="white" stroke="#f59e0b" stroke-width="3"/>
+  <rect x="80" y="80" width="440" height="30" fill="#f59e0b" rx="5"/>
+  <text x="300" y="100" text-anchor="middle" fill="white" font-family="Arial" font-size="14" font-weight="bold">AI Blog Generator</text>
+  <rect x="80" y="130" width="200" height="8" fill="#fbbf24" rx="4"/>
+  <rect x="80" y="150" width="300" height="8" fill="#fbbf24" rx="4"/>
+  <rect x="80" y="170" width="250" height="8" fill="#fbbf24" rx="4"/>
+  <rect x="80" y="190" width="180" height="8" fill="#fbbf24" rx="4"/>
+  <circle cx="450" cy="160" r="30" fill="#f59e0b"/>
+  <text x="450" y="168" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">AI</text>
+  <path d="M420 140 Q430 130 440 140" stroke="#f59e0b" stroke-width="2" fill="none"/>
+  <path d="M460 140 Q470 130 480 140" stroke="#f59e0b" stroke-width="2" fill="none"/>
+  <text x="300" y="240" text-anchor="middle" fill="#f59e0b" font-family="Arial" font-size="18" font-weight="bold">AI Blogging Assistant</text>
+</svg>

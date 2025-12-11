@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Converso",
+    "description": "An AI-powered learning platform that delivers real-time, voice-driven, and interactive educational experiences through conversational AI tutors.",
+    "image": "/images/converso.svg",
+    "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Supabase", "Clerk", "Vapi"],
+    "github": "",
+    "featured": true
+  },
+  {
+    "title": "Smart Inventory",
+    "description": "A comprehensive inventory management system that helps businesses track and manage their stock efficiently.",
+    "image": "/images/inventory.svg",
+    "technologies": ["React", "Node.js", "MongoDB", "Express"],
+    "github": "https://github.com/jiteshborse/smart-inventory",
+    "featured": true
+  },
+  {
+    "title": "AI-Blogging-Assistant",
+    "description": "A blog website that user can generate a blog only giving the name and small description using AI assistant.",
+    "image": "/images/blog-ai.svg",
+    "technologies": ["MongoDB", "Express", "ReactJS", "NodeJS"],
+    "github": "https://github.com/jiteshborse/AI-Blogging-Assistant",
+    "featured": false
+  },
+  {
+    "title": "Restaurant Recommendation",
+    "description": "Suggest the best restaurant based on the location, stars, meals etc to the users.",
+    "image": "/images/restaurant.svg",
+    "technologies": ["React", "MongoDB", "Tailwind CSS", "NodeJS"],
+    "github": "https://github.com/jiteshborse/Restaurant-Recommendation",
+    "featured": false
+  }
+]

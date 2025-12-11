@@ -1,0 +1,19 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="300" fill="#fef2f2"/>
+  <rect x="50" y="50" width="500" height="200" fill="white" stroke="#ef4444" stroke-width="3"/>
+  <circle cx="150" cy="120" r="25" fill="#ef4444"/>
+  <path d="M140 110 L160 110 M145 105 L155 105 M145 115 L155 115" stroke="white" stroke-width="2"/>
+  <rect x="135" y="125" width="30" height="15" fill="white" rx="2"/>
+  <circle cx="250" cy="120" r="25" fill="#f97316"/>
+  <path d="M240 110 L260 110 M245 105 L255 105 M245 115 L255 115" stroke="white" stroke-width="2"/>
+  <rect x="235" y="125" width="30" height="15" fill="white" rx="2"/>
+  <circle cx="350" cy="120" r="25" fill="#eab308"/>
+  <path d="M340 110 L360 110 M345 105 L355 105 M345 115 L355 115" stroke="white" stroke-width="2"/>
+  <rect x="335" y="125" width="30" height="15" fill="white" rx="2"/>
+  <circle cx="450" cy="120" r="25" fill="#22c55e"/>
+  <path d="M440 110 L460 110 M445 105 L455 105 M445 115 L455 115" stroke="white" stroke-width="2"/>
+  <rect x="435" y="125" width="30" height="15" fill="white" rx="2"/>
+  <rect x="80" y="170" width="440" height="25" fill="#fee2e2" rx="5"/>
+  <text x="300" y="188" text-anchor="middle" fill="#ef4444" font-family="Arial" font-size="14" font-weight="bold">Find Best Restaurants Near You</text>
+  <text x="300" y="240" text-anchor="middle" fill="#ef4444" font-family="Arial" font-size="18" font-weight="bold">Restaurant Recommendation</text>
+</svg>

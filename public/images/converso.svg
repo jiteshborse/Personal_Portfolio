@@ -1,0 +1,14 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="300" fill="#f0f9ff"/>
+  <rect x="50" y="50" width="500" height="200" fill="white" stroke="#3b82f6" stroke-width="3"/>
+  <circle cx="150" cy="120" r="25" fill="#3b82f6"/>
+  <path d="M140 115 Q150 105 160 115" stroke="white" stroke-width="3" fill="none"/>
+  <circle cx="145" cy="118" r="2" fill="white"/>
+  <circle cx="155" cy="118" r="2" fill="white"/>
+  <rect x="200" y="100" width="250" height="15" fill="#1e40af" rx="7"/>
+  <rect x="200" y="125" width="180" height="10" fill="#60a5fa" rx="5"/>
+  <rect x="200" y="145" width="220" height="10" fill="#60a5fa" rx="5"/>
+  <circle cx="480" cy="120" r="15" fill="#10b981"/>
+  <path d="M475 115 L485 125 M485 115 L475 125" stroke="white" stroke-width="2"/>
+  <text x="300" y="220" text-anchor="middle" fill="#1e40af" font-family="Arial" font-size="18" font-weight="bold">AI Learning Platform</text>
+</svg>

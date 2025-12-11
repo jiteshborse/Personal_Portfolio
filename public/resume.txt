@@ -1,0 +1,28 @@
+Full Stack Developer & Software Engineer
+JITESH BORSE
+
+Email: jitesh.borse007@gmail.com
+GitHub: https://github.com/jiteshborse
+LinkedIn: https://www.linkedin.com/in/jitesh-borse-6b8415252/
+
+EDUCATION
+MCA (Master of Computer Applications)
+Tech University, 2022 - 2024
+
+SKILLS
+- Programming: JavaScript, Python, Java, C++
+- Frontend: React, Next.js, HTML5, CSS3, Tailwind CSS
+- Backend: Node.js, Express, MongoDB, PostgreSQL
+- Tools: Git, Docker, AWS, VS Code
+
+PROJECTS
+1. E-Commerce Platform - Full-stack solution with React & Node.js
+2. AI Chat Application - Real-time chat with AI integration
+3. Task Management System - Collaborative tool with real-time updates
+
+ACHIEVEMENTS
+- Best Project Award - University Hackathon 2023
+- Dean's List - Academic Excellence 2022-2023
+- Open Source Contributor - 100+ merged PRs
+
+Note: This is a placeholder. Replace with actual PDF resume.

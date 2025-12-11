@@ -1,0 +1,35 @@
+{
+  "name": "Jitesh Borse",
+  "tagline": "Full Stack Developer & Software Engineer",
+  "description": "I build scalable web applications and create innovative digital solutions. Passionate about clean code, user experience, and cutting-edge technologies.",
+  "email": "jitesh.borse007@gmail.com",
+  "profileImage": "/images/profile.jpeg",
+  "social": {
+    "github": "https://github.com/jiteshborse",
+    "linkedin": "https://www.linkedin.com/in/jitesh-borse-6b8415252/",
+    "twitter": "https://x.com/jitesh_borse_"
+  },
+  "about": {
+    "education": [
+      {
+        "degree": "Master of Computer Applications (MCA)",
+        "university": "MIT World Peace University, Pune",
+        "cgpa": "7.82",
+        "status": "Current"
+      },
+      {
+        "degree": "Bachelor of Computer Applications (BCA)",
+        "university": "KTHM College, Nashik (SPPU)",
+        "cgpa": "7.31",
+        "status": "Completed"
+      },
+      {
+        "degree": "Higher Secondary (12th)",
+        "university": "",
+        "cgpa": "73%",
+        "status": "Completed"
+      }
+    ],
+    "languages": ["English", "Hindi", "Marathi"]
+  }
+}
