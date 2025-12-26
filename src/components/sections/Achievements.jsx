@@ -23,24 +23,24 @@ const AchievementCard = ({ achievement }) => {
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0 }
             }}
-            className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 border border-blue-200 dark:border-gray-700"
+            className="bg-gradient-to-br from-amber-50 to-red-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 border border-amber-200 dark:border-gray-700"
         >
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-4">
-                    <div className="p-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl shadow-lg">
+                    <div className="p-3 bg-gradient-to-r from-amber-500 to-red-600 rounded-xl shadow-lg">
                         <IconComponent className="text-white" size={28} />
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                             {achievement.title}
                         </h3>
-                        <p className="text-blue-600 dark:text-blue-400 font-medium">
+                        <p className="text-amber-600 dark:text-amber-400 font-medium">
                             {achievement.date}
                         </p>
                     </div>
                 </div>
-                <div className="px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full text-sm font-bold shadow-lg">
+                <div className="px-4 py-2 bg-gradient-to-r from-amber-500 to-red-600 text-white rounded-full text-sm font-bold shadow-lg">
                     {achievement.category}
                 </div>
             </div>
@@ -57,16 +57,29 @@ const AchievementCard = ({ achievement }) => {
                 {/* Team Members */}
                 <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
                         Team Members
                     </h4>
                     <div className="space-y-3">
+                        {/* Team Leader */}
+                        <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 rounded-lg border-2 border-amber-200 dark:border-amber-700">
+                            <div className="w-8 h-8 bg-gradient-to-r from-amber-500 to-red-600 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                                JB
+                            </div>
+                            <div className="flex-1">
+                                <span className="text-amber-800 dark:text-amber-300 font-bold">Jitesh Borse</span>
+                                <div className="text-xs text-amber-600 dark:text-amber-400 font-medium">Team Leader</div>
+                            </div>
+                            <div className="px-2 py-1 bg-amber-500 text-white text-xs rounded-full font-bold">
+                                Leader
+                            </div>
+                        </div>
                         {achievement.teamMembers.map((member, index) => (
-                            <div key={index} className="flex items-center gap-3 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                            <div key={index} className="flex items-center gap-3 p-3 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+                                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
                                     {member.split(' ').map(n => n[0]).join('')}
                                 </div>
-                                <span className="text-blue-800 dark:text-blue-300 font-medium">{member}</span>
+                                <span className="text-orange-800 dark:text-orange-300 font-medium">{member}</span>
                             </div>
                         ))}
                     </div>
@@ -75,16 +88,16 @@ const AchievementCard = ({ achievement }) => {
                 {/* Mentors */}
                 <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                        <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                        <span className="w-2 h-2 bg-red-500 rounded-full"></span>
                         Mentors & Guides
                     </h4>
                     <div className="space-y-3 mb-6">
                         {achievement.mentors.map((mentor, index) => (
-                            <div key={index} className="flex items-center gap-3 p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-                                <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                            <div key={index} className="flex items-center gap-3 p-3 bg-red-50 dark:bg-red-900/20 rounded-lg">
+                                <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
                                     {mentor.split(' ').map(n => n[0]).join('')}
                                 </div>
-                                <span className="text-purple-800 dark:text-purple-300 font-medium">{mentor}</span>
+                                <span className="text-red-800 dark:text-red-300 font-medium">{mentor}</span>
                             </div>
                         ))}
                     </div>
@@ -93,7 +106,7 @@ const AchievementCard = ({ achievement }) => {
                     <h5 className="text-md font-semibold text-gray-900 dark:text-white mb-3">Key Highlights</h5>
                     <div className="flex flex-wrap gap-2">
                         {achievement.highlights.map((highlight, index) => (
-                            <span key={index} className="px-3 py-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-sm rounded-full font-medium shadow-sm">
+                            <span key={index} className="px-3 py-1 bg-gradient-to-r from-amber-400 to-red-500 text-white text-sm rounded-full font-medium shadow-sm">
                                 {highlight}
                             </span>
                         ))}
@@ -111,7 +124,7 @@ const Achievements = () => {
     });
 
     return (
-        <section id="achievements" className="py-20 bg-white dark:bg-gray-900">
+        <section id="achievements" className="py-20 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-gray-900 dark:to-gray-800">
             <div className="container mx-auto px-4 lg:px-8">
                 <SectionTitle
                     title="Achievements & Awards"

@@ -18,7 +18,7 @@ const ProjectCard = ({ project, index }) => {
                 {/* Featured Badge */}
                 {project.featured && (
                     <div className="absolute top-4 right-4 z-10">
-                        <div className="px-3 py-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xs font-bold rounded-full shadow-lg flex items-center gap-1">
+                        <div className="px-3 py-1 bg-gradient-to-r from-amber-400 to-red-500 text-white text-xs font-bold rounded-full shadow-lg flex items-center gap-1">
                             <FiStar className="fill-current" size={12} />
                             Featured
                         </div>
@@ -45,11 +45,11 @@ const ProjectCard = ({ project, index }) => {
                 <div className="p-6">
                     {/* Title */}
                     <div className="flex items-start justify-between mb-3">
-                        <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
                             {project.title}
                         </h3>
                         <div className="ml-4">
-                            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                            <div className="w-8 h-8 bg-gradient-to-r from-amber-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
                                 {index + 1}
                             </div>
                         </div>
@@ -70,7 +70,7 @@ const ProjectCard = ({ project, index }) => {
                                 <motion.span
                                     key={techIndex}
                                     whileHover={{ scale: 1.1 }}
-                                    className="px-2 py-1 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 text-blue-800 dark:text-blue-300 text-xs rounded-full font-medium border border-blue-200 dark:border-blue-700 hover:shadow-md transition-all"
+                                    className="px-2 py-1 bg-gradient-to-r from-amber-100 to-red-100 dark:from-amber-900/30 dark:to-red-900/30 text-amber-800 dark:text-amber-300 text-xs rounded-full font-medium border border-amber-200 dark:border-amber-700 hover:shadow-md transition-all"
                                 >
                                     {tech}
                                 </motion.span>
@@ -85,7 +85,7 @@ const ProjectCard = ({ project, index }) => {
                                 href={project.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-gray-900 to-gray-700 dark:from-gray-700 dark:to-gray-900 text-white rounded-xl hover:shadow-lg transition-all duration-300 font-medium group/btn"
+                                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-900 to-red-700 dark:from-amber-700 dark:to-red-900 text-white rounded-xl hover:shadow-lg transition-all duration-300 font-medium group/btn"
                             >
                                 <FiGithub size={18} className="group-hover/btn:rotate-12 transition-transform" />
                                 View Code
@@ -99,15 +99,15 @@ const ProjectCard = ({ project, index }) => {
                         
                         {/* Project Status */}
                         <div className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                            <span className="text-sm text-green-600 dark:text-green-400 font-medium">Completed</span>
+                            <div className="w-2 h-2 bg-amber-500 rounded-full animate-pulse"></div>
+                            <span className="text-sm text-amber-600 dark:text-amber-400 font-medium">Completed</span>
                         </div>
                     </div>
                 </div>
                 
                 {/* Decorative Elements */}
-                <div className="absolute -top-1 -right-1 w-20 h-20 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
-                <div className="absolute -bottom-1 -left-1 w-16 h-16 bg-gradient-to-tr from-pink-500/10 to-yellow-500/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="absolute -top-1 -right-1 w-20 h-20 bg-gradient-to-br from-amber-500/10 to-red-500/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="absolute -bottom-1 -left-1 w-16 h-16 bg-gradient-to-tr from-orange-500/10 to-amber-500/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
             </div>
         </motion.div>
     );
@@ -120,40 +120,12 @@ const Projects = ({ data }) => {
     });
 
     return (
-        <section id="projects" className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-slate-900 dark:to-gray-800">
+        <section id="projects" className="py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 dark:from-gray-900 dark:via-amber-900/20 dark:to-red-900/20">
             <div className="container mx-auto px-4 lg:px-8">
                 <SectionTitle
                     title="Featured Projects"
                     subtitle="A showcase of my development journey"
                 />
-                
-                {/* Stats Bar */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={inView ? { opacity: 1, y: 0 } : {}}
-                    className="flex justify-center mb-16"
-                >
-                    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 border border-gray-200 dark:border-gray-700">
-                        <div className="flex items-center gap-8">
-                            <div className="text-center">
-                                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{data.length}</div>
-                                <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
-                            </div>
-                            <div className="w-px h-8 bg-gray-300 dark:bg-gray-600"></div>
-                            <div className="text-center">
-                                <div className="text-2xl font-bold text-green-600 dark:text-green-400">{data.filter(p => p.featured).length}</div>
-                                <div className="text-sm text-gray-600 dark:text-gray-400">Featured</div>
-                            </div>
-                            <div className="w-px h-8 bg-gray-300 dark:bg-gray-600"></div>
-                            <div className="text-center">
-                                <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">
-                                    {[...new Set(data.flatMap(p => p.technologies))].length}
-                                </div>
-                                <div className="text-sm text-gray-600 dark:text-gray-400">Technologies</div>
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
                 
                 <motion.div
                     ref={ref}
@@ -182,7 +154,7 @@ const Projects = ({ data }) => {
                     }}
                     className="text-center"
                 >
-                    <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-1 rounded-2xl shadow-2xl inline-block">
+                    <div className="bg-gradient-to-r from-amber-600 to-red-600 p-1 rounded-2xl shadow-2xl inline-block">
                         <div className="bg-white dark:bg-gray-800 rounded-2xl px-8 py-6">
                             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                                 Want to see more?
@@ -194,7 +166,7 @@ const Projects = ({ data }) => {
                                 href="https://github.com/jiteshborse"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-gray-900 to-gray-700 dark:from-gray-700 dark:to-gray-900 text-white rounded-xl hover:shadow-xl transition-all duration-300 font-semibold group"
+                                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-amber-900 to-red-700 dark:from-amber-700 dark:to-red-900 text-white rounded-xl hover:shadow-xl transition-all duration-300 font-semibold group"
                             >
                                 <FiGithub size={24} className="group-hover:rotate-12 transition-transform" />
                                 Explore GitHub Profile

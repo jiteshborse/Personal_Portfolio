@@ -15,6 +15,7 @@ const Header = ({ darkMode, toggleTheme }) => {
     }, []);
 
     const navLinks = [
+        { name: 'Home', href: '#hero' },
         { name: 'About', href: '#about' },
         { name: 'Skills', href: '#skills' },
         { name: 'Projects', href: '#projects' },
@@ -34,7 +35,7 @@ const Header = ({ darkMode, toggleTheme }) => {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                    ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg border-b border-white/20 py-3'
+                    ? 'bg-white/10 dark:bg-gray-900/10 backdrop-blur-md shadow-lg border-b border-white/10 py-3'
                     : 'bg-transparent py-5'
                 }`}
         >
@@ -46,7 +47,7 @@ const Header = ({ darkMode, toggleTheme }) => {
                         className="group"
                         onClick={(e) => scrollToSection(e, '#hero')}
                     >
-                        <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
+                        <div className="w-10 h-10 bg-gradient-to-r from-amber-500 to-red-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
                             <span className="text-white font-bold text-lg">JB</span>
                         </div>
                     </a>
@@ -58,10 +59,10 @@ const Header = ({ darkMode, toggleTheme }) => {
                                 <a
                                     href={link.href}
                                     onClick={(e) => scrollToSection(e, link.href)}
-                                    className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg transition-all font-medium relative group"
+                                    className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-all font-medium relative group"
                                 >
                                     {link.name}
-                                    <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
+                                    <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-amber-500 to-red-600 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
                                 </a>
                             </li>
                         ))}
@@ -85,8 +86,9 @@ const Header = ({ darkMode, toggleTheme }) => {
                     {/* Resume Download Button */}
                     <a
                         href="/resume.pdf"
-                        download
-                        className="hidden md:inline-flex px-5 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all font-medium shadow-lg hover:shadow-xl hover:scale-105"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hidden md:inline-flex px-5 py-2 bg-gradient-to-r from-amber-500 to-red-600 text-white rounded-xl hover:from-amber-600 hover:to-red-700 transition-all font-medium shadow-lg hover:shadow-xl hover:scale-105"
                     >
                         Resume
                     </a>
@@ -117,7 +119,7 @@ const Header = ({ darkMode, toggleTheme }) => {
                             <a
                                 href={link.href}
                                 onClick={(e) => scrollToSection(e, link.href)}
-                                className="block py-3 px-4 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg transition-all font-medium"
+                                className="block py-3 px-4 text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-all font-medium"
                             >
                                 {link.name}
                             </a>
@@ -126,10 +128,11 @@ const Header = ({ darkMode, toggleTheme }) => {
                     <li className="pt-2 border-t border-gray-200 dark:border-gray-700">
                         <a
                             href="/resume.pdf"
-                            download
-                            className="inline-flex w-full justify-center px-5 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all font-medium shadow-lg"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex w-full justify-center px-5 py-3 bg-gradient-to-r from-amber-500 to-red-600 text-white rounded-lg hover:from-amber-600 hover:to-red-700 transition-all font-medium shadow-lg"
                         >
-                            Download Resume
+                            View Resume
                         </a>
                     </li>
               </ul>

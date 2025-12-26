@@ -62,7 +62,7 @@ const Contact = ({ data }) => {
     ];
 
     return (
-        <section id="contact" className="py-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20">
+        <section id="contact" className="py-16 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 dark:from-gray-900 dark:via-amber-900/20 dark:to-red-900/20">
             <div className="container mx-auto px-4 lg:px-8">
                 <SectionTitle
                     title="Get In Touch"
@@ -90,7 +90,7 @@ const Contact = ({ data }) => {
                             }}
                             className="lg:col-span-1"
                         >
-                            <div className="bg-gradient-to-br from-blue-600 to-purple-700 rounded-xl shadow-xl p-6 text-white h-full">
+                            <div className="bg-gradient-to-br from-amber-600 to-red-700 rounded-xl shadow-xl p-6 text-white h-full">
                                 <div className="text-center mb-6">
                                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 backdrop-blur-sm">
                                         <FiMail className="text-white" size={24} />
@@ -98,7 +98,7 @@ const Contact = ({ data }) => {
                                     <h3 className="text-xl font-bold mb-2">
                                         Let's Connect
                                     </h3>
-                                    <p className="text-blue-100 text-sm leading-relaxed">
+                                    <p className="text-amber-100 text-sm leading-relaxed">
                                         Ready to bring your ideas to life?
                                     </p>
                                 </div>
@@ -110,10 +110,10 @@ const Contact = ({ data }) => {
                                             <FiMail size={16} />
                                         </div>
                                         <div>
-                                            <p className="text-blue-100 text-xs">Email me at</p>
+                                            <p className="text-amber-100 text-xs">Email me at</p>
                                             <a
                                                 href={`mailto:${data.email}`}
-                                                className="font-semibold text-sm hover:text-blue-200 transition-colors"
+                                                className="font-semibold text-sm hover:text-amber-200 transition-colors"
                                             >
                                                 {data.email}
                                             </a>
@@ -122,7 +122,7 @@ const Contact = ({ data }) => {
                                     
                                     {/* Social Links */}
                                     <div>
-                                        <p className="text-blue-100 text-xs mb-3">Follow me on social media</p>
+                                        <p className="text-amber-100 text-xs mb-3">Follow me on social media</p>
                                         <div className="flex gap-2">
                                             {socialLinks.map((social) => (
                                                 <a
@@ -155,7 +155,7 @@ const Contact = ({ data }) => {
                         >
                             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 border border-gray-200 dark:border-gray-700">
                                 <div className="flex items-center gap-3 mb-6">
-                                    <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg">
+                                    <div className="p-2 bg-gradient-to-r from-amber-500 to-red-600 rounded-lg">
                                         <FiSend className="text-white" size={20} />
                                     </div>
                                     <div>
@@ -251,7 +251,7 @@ const Contact = ({ data }) => {
                                     <button
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 font-medium flex items-center justify-center gap-2 shadow-lg hover:shadow-xl group"
+                                        className="w-full px-6 py-3 bg-gradient-to-r from-amber-600 to-red-600 text-white rounded-lg hover:from-amber-700 hover:to-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 font-medium flex items-center justify-center gap-2 shadow-lg hover:shadow-xl group"
                                     >
                                         <FiSend size={16} className={`${isSubmitting ? 'animate-pulse' : 'group-hover:translate-x-1'} transition-transform`} />
                                         {isSubmitting ? 'Sending...' : 'Send Message'}

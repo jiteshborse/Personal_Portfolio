@@ -17,15 +17,15 @@ const Skills = ({ data }) => {
     };
 
     const categoryColors = {
-        "Programming Languages": "from-blue-500 to-blue-600",
-        "Web Technologies": "from-green-500 to-green-600",
-        "Backend & Databases": "from-purple-500 to-purple-600",
-        "Tools & Platforms": "from-orange-500 to-orange-600",
-        "Core Concepts": "from-indigo-500 to-indigo-600"
+        "Programming Languages": "from-amber-500 to-orange-600",
+        "Web Technologies": "from-orange-500 to-red-600",
+        "Backend & Databases": "from-red-500 to-amber-600",
+        "Tools & Platforms": "from-amber-600 to-red-600",
+        "Core Concepts": "from-orange-600 to-amber-600"
     };
 
     return (
-        <section id="skills" className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20">
+        <section id="skills" className="py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 dark:from-gray-900 dark:via-amber-900/20 dark:to-red-900/20">
             <div className="container mx-auto px-4 lg:px-8">
                 <SectionTitle
                     title="Skills & Technologies"
@@ -83,11 +83,11 @@ const Skills = ({ data }) => {
                             hidden: { opacity: 0, y: 50 },
                             visible: { opacity: 1, y: 0 }
                         }}
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 p-1 rounded-xl shadow-xl"
+                        className="bg-gradient-to-r from-amber-600 to-red-600 p-1 rounded-xl shadow-xl"
                     >
                         <div className="bg-white dark:bg-gray-800 rounded-xl p-8">
                             <div className="text-center mb-8">
-                                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-2xl">🎯</span>
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
@@ -102,9 +102,9 @@ const Skills = ({ data }) => {
                                 {data.softSkills.map((skill, index) => (
                                     <div
                                         key={index}
-                                        className="text-center p-4 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg border border-blue-200/50 dark:border-blue-700/50 hover:shadow-md transition-all duration-300"
+                                        className="text-center p-4 bg-gradient-to-br from-amber-50 to-red-50 dark:from-amber-900/20 dark:to-red-900/20 rounded-lg border border-amber-200/50 dark:border-amber-700/50 hover:shadow-md transition-all duration-300"
                                     >
-                                        <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <div className="w-10 h-10 bg-gradient-to-r from-amber-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-3">
                                             <span className="text-white font-bold text-xs">
                                                 {skill.split(' ').map(word => word[0]).join('')}
                                             </span>
